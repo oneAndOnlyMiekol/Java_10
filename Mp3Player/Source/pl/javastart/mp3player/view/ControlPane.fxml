@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.javastart.mp3player.controller.ControlPaneController">
+	<children>
+		<Button fx:id="prevButton" mnemonicParsing="false" text="Button" />
+		<ToggleButton fx:id="playButton" mnemonicParsing="false" text="ToggleButton" />
+		<Button fx:id="nextButton" mnemonicParsing="false" text="Button" />
+		<Slider fx:id="volumeSlider" minorTickCount="5" showTickMarks="true" />
+		<Slider fx:id="songSlider" />
+	</children>
+</HBox>

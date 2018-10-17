@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="lowerCaseMainPane"
+	xmlns="http://javafx.com/javafx/10.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.MainController">
+	<children>
+		<TextArea fx:id="lowerCaseTextArea"
+			maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+			prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+		<Button fx:id="lowerCaseButton"
+			maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+			onAction="#toLowerCase" text="Lower Case Button" />
+	</children>
+</VBox>

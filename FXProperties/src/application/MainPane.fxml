@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPaneController">
+	<children>
+		<Slider fx:id="volumeSlider" majorTickUnit="20.0" showTickLabels="true" snapToTicks="true" />
+		<HBox>
+			<children>
+				<Label text="Głośność:">
+					<HBox.margin>
+						<Insets right="5.0" />
+					</HBox.margin>
+				</Label>
+				<Label fx:id="volumeLevelLabel" text="0" />
+			</children>
+		</HBox>
+	</children>
+</VBox>
