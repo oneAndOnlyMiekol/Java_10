@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="e.controller.ControlPaneController">
+			<children>
+				<Button fx:id="clearScreenButton"
+					maxHeight="1.7976931348623157E308"
+					maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+					text="Clear windows" HBox.hgrow="ALWAYS" />
+				<Button fx:id="switchContentButton" layoutX="10.0"
+					layoutY="10.0" maxHeight="1.7976931348623157E308"
+					maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+					text="Switch content" HBox.hgrow="ALWAYS" />
+				<Button fx:id="lowerCaseButton" layoutX="103.0"
+					layoutY="10.0" maxHeight="1.7976931348623157E308"
+					maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+					text="small letters" HBox.hgrow="ALWAYS" />
+				<Button fx:id="upperCaseButton" layoutX="103.0"
+					layoutY="10.0" maxHeight="1.7976931348623157E308"
+					maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+					text="BIG LETTERS" HBox.hgrow="ALWAYS" />
+			</children>
+		</HBox>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.controller.MainPaneController">
+	<children>
+		<fx:include fx:id="contentPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="400.0" source="ContentPane.fxml" />
+		<fx:include fx:id="controlPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="ControlPane.fxml" />
+		
+	</children>
+	
+</VBox>

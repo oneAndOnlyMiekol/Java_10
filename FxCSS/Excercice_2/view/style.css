@@ -1,0 +1,7 @@
+.button{
+	-fx-background-image: url("button-345.png") no-repeat fixed center;
+	
+}
+.button:hover{
+	-fx-opacity: 0.5;
+}
