@@ -5,3 +5,9 @@
 .button:hover{
 	-fx-opacity: 0.5;
 }
+.text-area, .text-area:focused .scroll-pane, .text-area:focused .scroll-pane .viewport .content{
+	-fx-background-color: #999999;
+	-fx-font-family: "Comic Sans MS";
+	-fx-font-size: 13;
+	-fx-font-style: italic;
+}
