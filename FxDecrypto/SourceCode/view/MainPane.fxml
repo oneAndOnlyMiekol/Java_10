@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPaneController">
+   <children>
+      <Label alignment="TOP_LEFT" text="What do you want to do?" VBox.vgrow="ALWAYS" />
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <CheckBox fx:id="encryptCheckBox" mnemonicParsing="false" text="Encrypt!" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="decryptCheckBox" mnemonicParsing="false" text="Decrypt!" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+      </HBox>
+      <Label fx:id="editableTextAreaLabel" text="Label" />
+      <TextArea fx:id="editableTextArea" prefHeight="200.0" prefWidth="200.0" />
+      <Label text="Key word/exprecion" />
+      <TextField fx:id="keyExprecion" />
+      <Label fx:id="resultTextAreaLabel" text="Label" />
+      <TextArea layoutX="10.0" layoutY="58.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>
