@@ -10,10 +10,10 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
-		Parent parent = FXMLLoader.load(getClass().getResource("/e/view/MainPane.fxml"));
+		Parent parent = FXMLLoader.load(getClass().getResource("/view/MainPane.fxml"));
 		Scene scene = new Scene(parent);
 		stage.setScene(scene);
-		stage.setTitle("Text Converter ver. 3.0");
+		stage.setTitle("Decrypto ver. 0.1");
 		stage.show();
 	}
 

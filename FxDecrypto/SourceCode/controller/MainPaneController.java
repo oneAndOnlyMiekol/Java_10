@@ -16,6 +16,9 @@ public class MainPaneController implements Initializable{
     private TextArea editableTextArea;
 
     @FXML
+    private TextArea resultTextArea;
+    
+    @FXML
     private Label editableTextAreaLabel;
 
     @FXML
@@ -32,7 +35,9 @@ public class MainPaneController implements Initializable{
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+		
+		
+		
 		
 	}
 
