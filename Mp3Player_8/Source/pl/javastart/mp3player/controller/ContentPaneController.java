@@ -17,14 +17,22 @@ public class ContentPaneController implements Initializable{
     public static final String ALBUM_COLUMN = "Album";
 	
 	
+    
 	@FXML
     private TableView<Mp3Song> contentTable;
+
+	public TableView<Mp3Song> getContentTable() {
+		return contentTable;
+	}
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		configureTable();
+		
 	}
 	
+	
+
 	private void configureTable() {
 		TableColumn<Mp3Song, String> titleColumn = new TableColumn<>(TITLE_COLUMN);
 		titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
