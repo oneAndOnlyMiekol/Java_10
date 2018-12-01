@@ -27,8 +27,8 @@
       </HBox>
       <Label fx:id="editableTextAreaLabel" text="Label" />
       <TextArea fx:id="editableTextArea" prefHeight="200.0" prefWidth="200.0" />
-      <Label text="Key word/exprecion" />
-      <TextField fx:id="keyExprecion" />
+      <Label text="Key word/expression" />
+      <TextField fx:id="keyExpression" />
       <Label fx:id="resultTextAreaLabel" text="Label" />
       <TextArea fx:id="resultTextArea" layoutX="10.0" layoutY="58.0" prefHeight="200.0" prefWidth="200.0" />
    </children>

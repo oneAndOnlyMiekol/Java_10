@@ -3,45 +3,45 @@ package util;
 public class Decrypter {
 	
 	
-	public static String decrypt(String key, String encryptedText) {
+	public static String decryptString(String key, String encryptedText) {
 		int j=0;
 		StringBuilder decryptedText = new StringBuilder();
+		
 		for(int i=0; i<encryptedText.length();i++) {
 			if(j==key.length())
 			j=0;
-			decryptedText.append(Decrypter.getChar(encryptedText.charAt(i)-key.charAt(j)));
-			
+			decryptedText.append(decryptCharacter(key.charAt(j),encryptedText.charAt(i)));
 			j++;
 		}
 		
 		return decryptedText.toString();
 	}
 	
-	public static String encrypt(String key, String decryptedText) {
+	private static char decryptCharacter(char keyCharacter, char encryptedCharacter) {
+		Alphabet alphabet = new Alphabet();
+		return alphabet.getChar(alphabet.getInt(encryptedCharacter)+alphabet.getInt(keyCharacter));
+	}
+
+	public static String encryptString(String key, String decryptedText) {
 		int j=0;
 		StringBuilder encryptedText = new StringBuilder();
 		for(int i=0; i<decryptedText.length();i++) {
 			if(j==key.length())
 			j=0;
-			encryptedText.append(Decrypter.getChar(decryptedText.charAt(i)+key.charAt(j)));
-			
+			encryptedText.append(encryptCharacter(key.charAt(j),decryptedText.charAt(i)));
 			j++;
 		}
 		return encryptedText.toString();
 	}
-	
-	public static char getChar(int intToSpecificChar) {
-		/*
-		if(intToSpecificChar<32) {
-			intToSpecificChar=-31+intToSpecificChar+126;
-		}
-		
-		if(intToSpecificChar>126) {
-			intToSpecificChar=31+intToSpecificChar-126;
-		}
-		*/
-		return (char)intToSpecificChar;
+
+	private static char encryptCharacter(char keyCharacter, char encryptedCharacter) {
+		Alphabet alphabet = new Alphabet();
+		return alphabet.getChar(alphabet.getInt(encryptedCharacter)-alphabet.getInt(keyCharacter));
 	}
+	
+	
+	
+	
 	
 	
 
